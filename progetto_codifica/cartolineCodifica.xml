@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE teiCorpus SYSTEM "tei_all.dtd">
+
+
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title> Progetto codifica di testi 2021/2022 - Cartoline ad Oliva Tortura </title>
+                <respStmt>
+                    <resp>Trascrizione a cura di:</resp>
+                    <name xml:id="ER">Elena Raso</name>
+					<name xml:id="MC">Marco Caruso</name>
+                </respStmt>
+                
+                <respStmt>
+                    <resp>Ente di Appartenenza</resp>
+                    <name type="comune" xml:id="CDS">Comune della Spezia</name>
+                </respStmt>
+            </titleStmt>
+            
+            <editionStmt>
+                <edition>Studenti di Codifica di Testi, Corso di Laurea di Informatica Umanistica, Università di Pisa
+                    <date> 2022</date>
+                </edition>
+				
+                <respStmt>
+                    <resp>Codificato da:</resp>
+                    <name ref="#ER">Elena Raso</name>
+					<name ref="#MC">Marco Caruso</name>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Compilato da:</resp>
+                    <name xml:id="TC">Tommaso Castagneto</name>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Responsabile scientifico:</resp>
+                    <name xml:id="GP">Giacomo Paolicchi</name>
+                    <name xml:id="ES">Enrica Salvatori</name>
+                </respStmt>
+                
+                <respStmt>
+                    <resp>Funzionario responsabile:</resp>
+                    <name xml:id="MarziaR">Marzia Ratti</name>
+                </respStmt>
+            </editionStmt>
+			
+            <publicationStmt>
+				<publisher>Università di Pisa</publisher>
+				<pubPlace>Pisa</pubPlace>
+				<availability>
+					<p>Available under licence only</p>
+				</availability>
+				<date when="2018">2018</date>
+				<distributor>LabCD</distributor>
+				<address>
+					<addrLine>Laboratorio di Cultura Digitale - Università di Pisa</addrLine>
+					<addrLine>Pisa</addrLine>
+				</address>
+			</publicationStmt>   
+
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country xml:id="IT">Italia</country>
+                        <settlement xml:id="SP">La Spezia (SP)</settlement>
+                        <repository xml:id="MCE">Museo Civico Etnografico "Giovanni Podenzana", sezione dei cimeli garibaldini e della Prima Guerra Mondiale</repository>
+                    </msIdentifier>
+					<msContents>
+						<summary>Cartolina Artistica</summary>
+						<textLang>Italiano</textLang>
+					</msContents>  
+                    <physDesc>
+						<objectDesc>
+							<supportDesc>
+								<support>
+									<objectType>Cartolina</objectType>
+									<material>Carta</material>
+									<dimensions unit="cm">
+										<height>9</height>
+										<width>14</width>
+									</dimensions>
+									<stamp type="postage">francobollo - Regno d'Italia</stamp>
+									<stamp type="postmark">timbro - Modena Ferrovia</stamp>
+								</support>
+								<condition>Buono</condition>
+							</supportDesc>
+						</objectDesc>
+					</physDesc>
+				</msDesc>
+
+				<!-- nomi persone presenti nelle cartoline -->
+                <listPerson>
+                    <person xml:id="G">
+                        <persName>
+                            <forename>Giovanni</forename>
+                            <addName type="alias">Giovannino</addName>
+                        </persName>
+                        <sex>M</sex>
+                    </person>
+                    <person xml:id="OT">
+                        <persName>
+                            <forename>Oliva</forename>
+                            <surname>Turtura</surname>
+                        </persName>
+                        <sex>F</sex>
+                    </person>
+                    <person xml:id="M">
+                        <persName>
+                            <surname>Muzioli</surname>
+                        </persName>
+                        <sex>M</sex>
+						<occupation n="1">pittore</occupation>
+                    </person>
+                    <person xml:id="CG">
+                        <persName>
+							<forename><abbr type="initial">C.</abbr></forename>
+                            <surname>Giris</surname>
+                        </persName>
+                        <sex>M</sex>
+						<occupation n="1">pittore</occupation>
+                    </person>
+                    <person xml:id="B">
+                        <persName>
+                            <surname>Bonora</surname>
+                        </persName>
+                        <sex>M</sex>
+						<occupation n="1">pittore</occupation>
+                    </person>
+                    <person xml:id="ESB">
+                        <persName>
+							<forename><abbr type="initial">E.</abbr></forename>
+                            <surname>Sborgi</surname>
+                        </persName>
+                        <sex>M</sex>
+                    </person>					
+                </listPerson>
+
+                <!--lista dei luoghi presenti nelle cartoline-->
+                <listPlace>
+                    <place xml:id="MO">
+						<placeName>Modena</placeName>
+						<settlement type="località">città</settlement>
+						<district type="comune">Modena</district>
+						<district type="provincia">MO</district>
+                        <district type="regione">Emilia Romagna</district>
+						<country key="N">IT</country>
+					</place>
+                    <place xml:id="RV">
+						<placeName >Ravenna</placeName>
+						<settlement type="località">città</settlement>
+						<district type="comune">Ravenna</district>
+						<district type="provincia">RV</district>
+                        <district type="regione">Emilia Romagna</district>						
+						<country key="N">IT</country>
+					</place>
+					<place xml:id="MI" >
+						<placeName >Milano</placeName>
+						<settlement type="località">città</settlement>
+						<district type="comune">Milano</district>
+						<district type="provincia">MI</district>
+                        <district type="regione">Lombardia</district>						
+						<country key="N">IT</country>
+					</place>
+					<place xml:id="FI" >
+						<placeName >Firenze</placeName>
+						<settlement type="località">città</settlement>
+						<district type="comune">Firenze</district>
+						<district type="provincia">FI</district>
+                        <district type="regione">Toscana</district>						
+						<country key="N">IT</country>
+					</place>
+                </listPlace>   
+            </sourceDesc>
+        </fileDesc>   					           
+	</teiHeader>   
+
+    <!-- CARTOLINA 139-->         
+	<TEI xml:id="c139">  
+		<teiHeader>
+			<fileDesc>
+				<titleStmt>
+					<title>Cartolina 139</title>
+					<respStmt>
+						<resp>Trascritto da</resp>
+						<name ref="#ER">Elena Raso</name>
+						<name ref="#MC">Marco Caruso</name>
+					</respStmt>
+					
+					<respStmt>
+						<resp>Ente di Appartenenza</resp>
+						<name type="comune" ref="#CDS">Comune della Spezia</name>
+					</respStmt>
+				</titleStmt>
+				<editionStmt>
+					<edition>
+						Studenti di Codifica di Testi, Corso di Laurea Triennale di Informatica Umanistica, Università di Pisa
+						<date>2022</date>
+					</edition>
+					<respStmt>
+						<resp>Codificato da:</resp>
+						<name ref="#ER">Elena Raso</name>
+						<name ref="#MC">Marco Caruso</name>
+					</respStmt>
+					<respStmt>
+						<resp>Compilato da:</resp>
+						<name ref="#TC">Tommaso Castagneto</name>
+					</respStmt>
+					<respStmt>
+						<resp>Responsabile scientifico:</resp>
+						<name ref="#GP">Giacomo Paolicchi</name>
+						<name ref="#ES">Enrica Salvatori</name>
+					</respStmt>
+					<respStmt>
+						<resp>Funzionario responsabile:</resp>
+						<name ref="#MR">Marzia Ratti</name>
+					</respStmt>
+				</editionStmt>  
+
+				<publicationStmt>
+					<publisher>Università di Pisa</publisher>
+					<pubPlace>Pisa</pubPlace>
+					<availability>
+						<p>Available under licence only</p>
+					</availability>
+					<date when="2018">2018</date>
+					<distributor>LabCD</distributor>
+					<address>
+						<addrLine>Laboratorio di Cultura Digitale - Università di Pisa</addrLine>
+						<addrLine>Pisa</addrLine>
+					</address>
+				</publicationStmt>
+				<notesStmt>
+					<note>Sul retro riporta stampati "Produzione italiana serie 132-2" e "Uff. Revisione Stampa N. 1263"
+					</note>
+				</notesStmt>
+				<sourceDesc>
+					<bibl>
+						<title>[Donna con bastone]</title>
+                        <date>1917</date>
+					</bibl>
+					<msDesc>
+						<msIdentifier>
+							<country ref="#IT"></country>
+							<settlement ref="#SP"></settlement>
+							<repository ref="#MCE"></repository>
+							<idno>7694_139_001/002</idno>
+						</msIdentifier>                   
+						<msContents>
+							<summary >Cartolina Artistica</summary>
+							<textLang>Italiano</textLang>
+						</msContents>
+                        <physDesc>
+							<objectDesc >
+								<supportDesc>
+									<support>
+										<objectType>Cartolina</objectType>
+										<material>Carta</material>
+										<dimensions unit="cm">
+											<height>9</height>
+											<width>14</width>
+										</dimensions>
+										<stamp type="postage">francobollo - Regno d'Italia</stamp>
+										<stamp type="postmark">timbro - Modena Ferrovia</stamp>
+									</support>
+									<condition>Buono</condition>
+								</supportDesc>
+							</objectDesc>
+						</physDesc>
+					</msDesc>  
+                </sourceDesc>
+            </fileDesc>   
+
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <persName ref="#G"/>
+                        <placeName ref="#MO"></placeName>
+                        <date type="writing" when="1917-22-08">1917/22/08</date>
+                    </correspAction>
+                    <correspAction type="received">
+                        <persName ref="#OT"></persName>
+                        <placeName ref="#RV"></placeName>
+                    </correspAction>
+                </correspDesc>   
+				<textClass>
+					<keywords>
+						<term>Cartolina </term>
+						<term>Cartolina Artistica </term>
+						<term>Donna con bastone</term>
+					</keywords>
+				</textClass>
+				<langUsage>
+					<language ident="it-IT">italiano</language>
+				</langUsage>
+			</profileDesc>
+		</teiHeader>              
+
+        <facsimile>
+            <surface xml:id="c139F">
+                <graphic url='7694-139F.jpeg' width='1046px' height='1636px' />
+            </surface>
+            <surface xml:id="c139R">
+                <graphic url='7694-139R.jpeg' width='1636px' height='1046px' />
+                <zone ulx="988" uly="45" lrx="1143" lry="152" xml:id="c139_id"/>
+				<zone ulx="143" uly="65" lrx="757" lry="938" xml:id="c139_messaggio"/>
+				<zone ulx="600" uly="55" lrx="753" lry="937" xml:id="c139_riga1"/>
+				<zone ulx="358" uly="63" lrx="561" lry="794" xml:id="c139_riga2"/>
+				<zone ulx="127" uly="59" lrx="376" lry="941" xml:id="c139_riga3"/>
+				<zone ulx="1075" uly="25" lrx="1615" lry="495" xml:id="c139_destinazione"/>
+				<zone ulx="1115" uly="149" lrx="1475" lry="482" xml:id="c139_timbro"/>
+                <zone ulx="1341" uly="39" lrx="1626" lry="342" xml:id="c139_francobollo"/>
+                <zone ulx="802" uly="236" lrx="1611" lry="933" xml:id="c139_indirizzi"/>
+                <zone ulx="790" uly="256" lrx="1094" lry="389" xml:id="c139_riga4"/>
+                <zone ulx="789" uly="450" lrx="1613" lry="577" xml:id="c139_riga5"/>
+                <zone ulx="766" uly="604" lrx="1606" lry="723" xml:id="c139_riga6"/>
+				<zone ulx="831" uly="772" lrx="1614" lry="971" xml:id="c139_riga7"/>
+				<zone ulx="127" uly="899" lrx="898" lry="1005" xml:id="c139_bottom"/>
+				<zone ulx="148" uly="928" lrx="626" lry="1000" xml:id="c139_stamp1"/>
+				<zone ulx="695" uly="954" lrx="855" lry="1007" xml:id="c139_stamp2"/>
+				<zone ulx="39" uly="412" lrx="123" lry="705" xml:id="c139_left"/>
+            </surface>
+        </facsimile>	
+		
+		<text type="cartolina">
+            <body>
+                <div facs="#c139F" type="fronte">
+                    <figure>
+                        <graphic url='7694-139F.jpg'/>
+                        <figDesc>Donna con cappello rosso tiene in mano un bastone.</figDesc>
+                        <head>[Donna con bastone]</head>
+                    </figure>
+                </div>
+                <div facs="#c139R" type="retro">
+                    <p><idno type="numcartolina" facs="#c139_id"> 139</idno></p>
+                    <div facs="#c139_messaggio" type="message">
+                        <opener>
+							<lb facs="#c139_riga1"/>
+                            <placeName ref="#MO">Modena</placeName>
+							<pc type="comma">,</pc> lì 
+                            <date when="22/8-17">22/8-17</date> 
+						</opener>
+						<p></p>
+						<closer>
+							<salute>
+								<lb facs="#c139_riga2"/>
+								Affettuosissimi 
+							</salute>
+							<signed>
+								<lb facs="#c139_riga3"/>
+								<persName ref="#G"><addName type="alias">Giovannino</addName></persName>
+							</signed>
+						</closer>
+					</div>
+					<div facs="#c139_destinazione"  type="destination">
+						<p>
+							<stamp type="postmark" facs="#c139_timbro"> 
+								<placeName ref="#MO"> MODENA</placeName>
+								<date> 23 8 17 <gap reason="faded"/> </date>
+								FERROV<supplied reason="illegible">[IA]</supplied> 
+							</stamp>
+							<stamp type="postage" facs="#c139_francobollo">
+								Francobollo da 5 centesimi del Regno d'Italia
+							</stamp>
+						</p>
+						<div>
+							<p>
+								<address facs="#c139_indirizzi">
+									<lb facs="#c139_riga4"/>
+									<addrLine>
+										<abbr>Gent </abbr>
+										<expan>Gent<ex>ile</ex>
+										</expan>
+										<abbr>Sig na </abbr>
+										<expan>Sig<ex>norina</ex>
+										</expan>
+									</addrLine>
+									<lb facs="#c139_riga5"/>
+									<addrLine>
+										<persName ref="#OT">Oliva Turtura</persName>
+									</addrLine>
+									<lb facs="#c139_riga6"/>
+									<addrLine>
+										<seg>Via Girolamo Ros</seg><c corresp="s" >&#x17F;</c><seg>s</seg><seg>i 58</seg>
+									</addrLine>
+									<lb facs="#c139_riga7"/>
+									<addrLine>
+										<placeName ref="#RV"><hi rend="underline">Ravenna</hi></placeName>
+									</addrLine>
+								</address>
+							</p>
+						</div>
+					</div>
+					<div facs="#c139_bottom" type="bottom">
+						<p>
+							<stamp facs="#c139_stamp1">
+								Uff. Revisione stampa - N. 1263  
+							</stamp>
+						</p>					
+						<p>
+							<stamp facs="#c139_stamp2">
+								A.D.M
+							</stamp>
+						</p>
+					</div>
+					<div>
+						<p>
+							<stamp facs="#c139_left">
+								Produzione italiana Serie 132 - 2 
+							</stamp>
+						</p>
+					</div>
+				</div>
+			</body>
+		</text>
+	</TEI>                     	                                
+
+    <!-- CARTOLINA 159-->         
+	<TEI xml:id="c159"> 
+		<teiHeader>
+			<fileDesc>
+				<titleStmt>
+					<title>Cartolina 159</title>
+					<respStmt>
+						<resp>Trascrizione a cura di:</resp>
+						<name ref="#ER">Elena Raso</name>
+						<name ref="#MC">Marco Caruso</name>
+					</respStmt>
+					
+					<respStmt>
+						<resp>Ente di Appartenenza</resp>
+						<name type="comune" ref="#CDS">Comune della Spezia</name>
+					</respStmt>
+				</titleStmt>
+				<editionStmt>
+				<edition>
+					Studenti di Codifica di Testi, Corso di Laurea Triennale di Informatica Umanistica, Università di Pisa
+					<date>2022</date>
+				</edition>
+				<respStmt>
+					<resp>Codificato da:</resp>
+					<name ref="#ER">Elena Raso</name>
+					<name ref="#MC">Marco Caruso</name>
+				</respStmt>
+				<respStmt>
+					<resp>Compilato da:</resp>
+					<name ref="#TC">Tommaso Castagneto</name>
+				</respStmt>
+				<respStmt>
+					<resp>Responsabile scientifico:</resp>
+					<name ref="#GP">Giacomo Paolicchi</name>
+					<name ref="#ES">Enrica Salvatori</name>
+				</respStmt>
+				<respStmt>
+					<resp>Funzionario responsabile:</resp>
+					<name ref="#MR">Marzia Ratti</name>
+				</respStmt>
+			</editionStmt>   
+
+			<publicationStmt>
+				<publisher>Università di Pisa</publisher>
+				<pubPlace>Pisa</pubPlace>
+				<availability>
+					<p>Available under licence only</p>
+				</availability>
+				<date when="2018">2018</date>
+				<distributor>LabCD</distributor>
+				<address>
+					<addrLine>Laboratorio di Cultura Digitale - Università di Pisa</addrLine>
+					<addrLine>Pisa</addrLine>
+				</address>
+			</publicationStmt>
+				<notesStmt>
+					<note>Sul retro troviamo la stampa "Proprietà artistica riservata - Uff. Rev. Stampa Milano 25-4-17 N 621"
+					</note>
+				</notesStmt>
+				<sourceDesc>
+					<bibl>
+						<title>[Bambini che si abbracciano]</title>
+						<pubPlace ref="#MI"></pubPlace>
+                       	<date>1917</date>
+					</bibl>
+
+					<msDesc>
+						<msIdentifier>
+							<country ref="#IT"></country>
+							<settlement ref="#SP"></settlement>
+							<repository ref="#MCE"></repository>
+							<idno>7694_159_001/002</idno>
+						</msIdentifier>                   
+						<msContents>
+							<summary >Cartolina Artistica</summary>
+							<textLang>Italiano</textLang>
+						</msContents>
+						
+                    	<physDesc>
+							<objectDesc >
+								<supportDesc>
+									<support>
+										<objectType>Cartolina</objectType>
+										<material>Carta</material>
+										<dimensions unit="cm">
+											<height>9</height>
+											<width>14</width>
+										</dimensions>
+										<stamp type="postage">francobollo - Regno d'Italia</stamp>
+										<stamp type="postmark">timbro - Modena Ferrovia</stamp>
+									</support>
+									<condition>Buono</condition>
+								</supportDesc>
+							</objectDesc>
+						</physDesc>
+					</msDesc>
+                </sourceDesc>
+            </fileDesc>   
+
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <persName ref="#G"/>
+                        <placeName ref="#MO"></placeName>
+                        <date type="writing" when="1917-9-9">1917/9/9</date>
+                    </correspAction>
+                    <correspAction type="received">
+                        <persName ref="#OT"></persName>
+                        <placeName ref="#RV"></placeName>
+                    </correspAction>
+                </correspDesc>   
+				<textClass>
+					<keywords>
+						<term>Cartolina </term>
+						<term>Cartolina Artistica </term>
+						<term>Bambini che si abbracciano</term>
+					</keywords>
+				</textClass>
+				<langUsage>
+					<language ident="it-IT">italiano</language>
+				</langUsage>
+			</profileDesc>
+		</teiHeader>              
+
+        <facsimile>
+            <surface xml:id="c159F">
+                <graphic url='7694-159F.jpeg' width='1059px' height='1670px' />
+            </surface>
+            <surface xml:id="c159R">
+                <graphic url='7694-159R.jpeg' width='1660px' height='1070px' />
+                <zone ulx="1024" uly="204" lrx="1157" lry="292" xml:id="c159_id"/>
+				<zone ulx="88" uly="46" lrx="707" lry="974" xml:id="c159_messaggio"/>
+				<zone ulx="532" uly="116" lrx="728" lry="953" xml:id="c159_riga1"/>
+				<zone ulx="361" uly="113" lrx="541" lry="1014" xml:id="c159_riga2"/>
+				<zone ulx="143" uly="60" lrx="358" lry="1001" xml:id="c159_riga3"/>
+				<zone ulx="1187" uly="4" lrx="1659" lry="362" xml:id="c159_destinazione"/>
+				<zone ulx="1284" uly="4" lrx="1655" lry="315" xml:id="c159_timbro"/>
+                <zone ulx="1315" uly="77" lrx="1608" lry="375" xml:id="c159_francobollo"/>
+                <zone ulx="774" uly="394" lrx="1635" lry="989" xml:id="c159_indirizzi"/>
+                <zone ulx="772" uly="419" lrx="1414" lry="552" xml:id="c159_riga4"/>
+                <zone ulx="798" uly="560" lrx="1571" lry="672" xml:id="c159_riga5"/>
+                <zone ulx="807" uly="690" lrx="1624" lry="806" xml:id="c159_riga6"/>
+				<zone ulx="843" uly="807" lrx="1615" lry="972" xml:id="c159_riga7"/>
+				<zone ulx="660" uly="961" lrx="825" lry="1028" xml:id="c159_bottom"/>
+				<zone ulx="34" uly="37" lrx="92" lry="1015" xml:id="c159_left"/>
+            </surface>
+        </facsimile>	
+
+		<text type="cartolina">
+            <body>
+                <div facs="#c159F" type="fronte">
+                    <figure>
+                        <graphic url='7694-159F.jpg'/>
+                        <figDesc>Due bambini si abbracciano di notte sotto un albero.</figDesc>
+                        <head>[Bambini che si abbracciano]</head>
+                    </figure>
+                </div>
+                <div facs="#c159R" type="retro">
+                    <p><idno type="numcartolina" facs="#c159_id"> 159</idno></p>
+                    <div facs="#c159_messaggio" type="message">
+                        <opener>
+							<lb facs="#c159_riga1"/>
+                            <placeName ref="#MO">Modena</placeName>
+							lì 
+                            <date when="9/9-17">9/9-17</date> 
+						</opener>
+						<p></p>
+						<closer>
+							<salute>
+								<lb facs="#c159_riga2"/>
+								Un pensiero affettuoso
+							</salute>
+							<signed>
+								<lb facs="#c159_riga3"/>
+								<persName ref="#G"><addName type="alias">Giovannino</addName></persName>
+							</signed>
+						</closer>
+					</div>
+					<div facs="#c159_destinazione" type="destination">
+						<p>
+							<stamp type="postmark" facs="#c159_timbro"> 
+								<placeName ref="#MO"> MOD<supplied reason="illegible">[EN]</supplied>A</placeName>
+								<date> 5 9 <gap reason="faded"/> </date>
+								<unclear reason="faded"> FERROVIA </unclear>
+							</stamp>
+							<stamp type="postage" facs="#c159_francobollo">
+								Francobollo da 5 centesimi del Regno d'Italia
+							</stamp>
+						</p>
+						<div>
+							<p>
+								<address facs="#c159_indirizzi">
+									<lb facs="#c159_riga4"/>
+									<addrLine>
+										<abbr>Gent </abbr>
+										<expan>Gent<ex>ile</ex>
+										</expan>
+										<abbr>Sig na </abbr>
+										<expan>Sig<ex>norina</ex>
+										</expan>
+									</addrLine>
+									<lb facs="#c159_riga5"/>
+									<addrLine>
+										<persName ref="#OT">Oliva Turtura</persName>
+									</addrLine>
+									<lb facs="#c159_riga6"/>
+									<addrLine>
+										<seg>Via Girolamo Ros</seg><c corresp="s" >&#x17F;</c><seg>s</seg><seg>i 58</seg>
+									</addrLine>
+									<lb facs="#c159_riga7"/>
+									<addrLine>
+										<placeName ref="#RV"><hi rend="underline">Ravenna</hi></placeName>
+									</addrLine>
+								</address>
+							</p>
+						</div>
+					</div>
+					<div>
+						<p>
+							<stamp facs="#c159_bottom">
+								226 1 
+							</stamp>
+						</p>					
+						<p>
+							<stamp facs="#c159_left">
+								Proprietà artistica riservata - Uff. Rev. Stampa Milano 25-4-17 N. 621
+							</stamp>
+						</p>
+					</div>										
+				</div>
+			</body>
+		</text>
+	</TEI> 
+
+    <!-- CARTOLINA 109-->         
+	<TEI xml:id="c109"> 
+		<teiHeader>
+			<fileDesc>
+				<titleStmt>
+					<title>Cartolina 109</title>
+					<respStmt>
+						<resp>Trascrizione a cura di:</resp>
+						<name ref="#ER">Elena Raso</name>
+						<name ref="#MC">Marco Caruso</name>
+					</respStmt>
+					
+					<respStmt>
+						<resp>Ente di Appartenenza</resp>
+						<name type="comune" ref="#CDS">Comune della Spezia</name>
+					</respStmt>
+				</titleStmt>
+				<editionStmt>
+				<edition>
+					Studenti di Codifica di Testi, Corso di Laurea Triennale di Informatica Umanistica, Università di Pisa
+					<date>2022</date>
+				</edition>
+				<respStmt>
+					<resp>Codificato da:</resp>
+					<name ref="#ER">Elena Raso</name>
+					<name ref="#MC">Marco Caruso</name>
+				</respStmt>
+				<respStmt>
+					<resp>Compilato da:</resp>
+					<name ref="#TC">Tommaso Castagneto</name>
+				</respStmt>
+				<respStmt>
+					<resp>Responsabile scientifico:</resp>
+					<name ref="#GP">Giacomo Paolicchi</name>
+					<name ref="#ES">Enrica Salvatori</name>
+				</respStmt>
+				<respStmt>
+					<resp>Funzionario responsabile:</resp>
+					<name ref="#MR">Marzia Ratti</name>
+				</respStmt>
+			</editionStmt>   
+
+			<publicationStmt>
+				<publisher>Università di Pisa</publisher>
+				<pubPlace>Pisa</pubPlace>
+				<availability>
+					<p>Available under licence only</p>
+				</availability>
+				<date when="2018">2018</date>
+				<distributor>LabCD</distributor>
+				<address>
+					<addrLine>Laboratorio di Cultura Digitale - Università di Pisa</addrLine>
+					<addrLine>Pisa</addrLine>
+				</address>
+			</publicationStmt>
+				<notesStmt>
+					<note>In fronte riporta una stampa "Amata del mio cor sempre sarai". Sul retro riporta stampato nome dell'autore  (Muzzoli) e il titolo dell' opera in fronte, e " E.Sborgi. Firenze. - Riproduzione interdetta"
+					</note>
+				</notesStmt>
+				<sourceDesc>
+					<bibl>
+						<title>Servilia e Caio Giulio</title>
+						<pubPlace ref="#FI"></pubPlace>
+                       	<date>1917</date>
+					</bibl>
+
+					<msDesc>
+						<msIdentifier>
+							<country ref="#IT"></country>
+							<settlement ref="#SP"></settlement>
+							<repository ref="#MCE"></repository>
+							<idno>7694_109_001/002</idno>
+						</msIdentifier>                   
+						<msContents>
+							<summary >Cartolina Artistica</summary>
+							<textLang>Italiano</textLang>
+						</msContents>
+						
+                    	<physDesc>
+							<objectDesc >
+								<supportDesc>
+									<support>
+										<objectType>Cartolina</objectType>
+										<material>Carta</material>
+										<dimensions unit="cm">
+											<height>9</height>
+											<width>14</width>
+										</dimensions>
+										<stamp type="postage">francobollo - Regno d'Italia</stamp>
+										<stamp type="postmark">timbro - Modena Ferrovia</stamp>
+									</support>
+									<condition>Buono</condition>
+								</supportDesc>
+							</objectDesc>
+						</physDesc>
+					</msDesc>
+                </sourceDesc>
+            </fileDesc>   
+
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <persName ref="#G"/>
+                        <placeName ref="#MO"></placeName>
+                        <date type="writing" when="1917-03-07">1917/03/07</date>
+                    </correspAction>
+                    <correspAction type="received">
+                        <persName ref="#OT"></persName>
+                        <placeName ref="#RV"></placeName>
+                    </correspAction>
+                </correspDesc>   
+				<textClass>
+					<keywords>
+						<term>Cartolina </term>
+						<term>Cartolina Artistica </term>
+						<term>Servilia e Caio Giulio</term>
+					</keywords>
+				</textClass>
+				<langUsage>
+					<language ident="it-IT">italiano</language>
+				</langUsage>
+			</profileDesc>
+		</teiHeader>              
+
+        <facsimile>
+            <surface xml:id="c109F">
+                <graphic url='7694-109F.jpeg' width='1056px' height='1641px' />
+            </surface>
+            <surface xml:id="c109R">
+                <graphic url='7694-109R.jpeg' width='1642px' height='1068px' />
+                <zone ulx="173" uly="33" lrx="338" lry="128" xml:id="c109_id"/>
+				<zone ulx="7" uly="73" lrx="805" lry="1041" xml:id="c109_messaggio"/>
+				<zone ulx="555" uly="140" lrx="780" lry="790" xml:id="c109_riga1"/>
+				<zone ulx="278" uly="135" lrx="600" lry="1048" xml:id="c109_riga2"/>
+				<zone ulx="21" uly="78" lrx="378" lry="1048" xml:id="c109_riga3"/>
+				<zone ulx="720" uly="22" lrx="1620" lry="429" xml:id="c109_destinazione"/>
+				<zone ulx="699" uly="64" lrx="1068" lry="425" xml:id="c109_timbro"/>
+				<zone ulx="1197" uly="64" lrx="1568" lry="417" xml:id="c109_timbro2"/>
+                <zone ulx="1335" uly="9" lrx="1619" lry="313" xml:id="c109_francobollo"/>
+                <zone ulx="795" uly="257" lrx="1612" lry="1003" xml:id="c109_indirizzi"/>
+                <zone ulx="789" uly="275" lrx="1538" lry="473" xml:id="c109_riga4"/>
+                <zone ulx="806" uly="485" lrx="1591" lry="619" xml:id="c109_riga5"/>
+                <zone ulx="798" uly="616" lrx="1612" lry="768" xml:id="c109_riga6"/>
+				<zone ulx="858" uly="778" lrx="1612" lry="998" xml:id="c109_riga7"/>
+				<zone ulx="35" uly="954" lrx="868" lry="1012" xml:id="c109_bottom"/>
+				<zone ulx="43" uly="946" lrx="566" lry="1002" xml:id="c109_stamp1"/>
+				<zone ulx="746" uly="940" lrx="874" lry="1007" xml:id="c109_stamp2"/>
+				<zone ulx="18" uly="176" lrx="71" lry="818" xml:id="c109_stamp3"/>
+				<zone ulx="729" uly="90" lrx="916" lry="178" xml:id="c109_stamp4"/>
+            </surface>
+        </facsimile>	
+
+		<text type="cartolina">
+            <body>
+                <div facs="#c109F" type="fronte">
+                    <figure>
+                        <graphic url='7694-109F.jpg'/>
+                        <figDesc>Servilia, seduta e sorridente, e Caio Giulio in una stanza</figDesc>
+                        <head>Servilia e Caio Giulio</head>
+                    </figure>
+                </div>
+                <div facs="#c109R" type="retro">
+                    <p><idno type="numcartolina" facs="#c109_id"> 109</idno></p>
+                    <div facs="#c109_messaggio" type="message">
+                        <opener>
+							<lb facs="#c109_riga1"/>
+                            <date when="3/7-1917">3/7-1917</date> 
+						</opener>
+						<p></p>
+						<closer>
+							<salute>
+								<lb facs="#c109_riga2"/>
+								Temporale
+							</salute>
+							<signed>
+								<lb facs="#c109_riga3"/>
+								<persName ref="#G"><addName type="alias">Giovannino</addName></persName>
+							</signed>
+						</closer>
+					</div>
+					<div facs="#c109_destinazione" type="destination">
+						<p>
+							<stamp type="postmark" facs="#c109_timbro"> 
+								<placeName ref="#MO"> MODENA</placeName>
+								<date> 3 - 71721 </date>
+								<unclear reason="faded"> FERROVIA </unclear>
+							</stamp>
+							<stamp type="postage" facs="#c109_francobollo">
+								Francobollo da 5 centesimi del Regno d'Italia
+							</stamp>
+							<stamp type="postmark" facs="#c109_timbro2"> 
+								<placeName ref="#MO"> MODENA</placeName>
+								<date> 3 - 71721 </date>
+								F<supplied reason="illegible">[ERROVIA]</supplied>
+							</stamp>							
+						</p>
+						<div>
+							<p>
+								<address facs="#c109_indirizzi">
+									<lb facs="#c109_riga4"/>
+									<addrLine>
+										<abbr>Gent </abbr>
+										<expan>Gent<ex>ile</ex>
+										</expan>
+										<abbr>Sig na </abbr>
+										<expan>Sig<ex>norina</ex>
+										</expan>
+									</addrLine>
+									<lb facs="#c109_riga5"/>
+									<addrLine>
+										<persName ref="#OT">Oliva Turtura</persName>
+									</addrLine>
+									<lb facs="#c109_riga6"/>
+									<addrLine>
+										<seg>Via Girolamo Ros</seg><c corresp="s" >&#x17F;</c><seg>s</seg><seg>i 58</seg>
+									</addrLine>
+									<lb facs="#c109_riga7"/>
+									<addrLine>
+										<placeName ref="#RV"><hi rend="underline">Ravenna</hi></placeName>
+									</addrLine>
+								</address>
+							</p>
+						</div>
+					</div>
+					<div facs="#c109_bottom" type="bottom">
+						<p>
+						<stamp facs="#c109_stamp2">
+							481 
+						</stamp>
+						</p>					
+						<p>
+						<stamp facs="#c109_stamp1">
+							MUZIOLI - Servilia e Caio Giulio. 
+						</stamp>
+						</p>
+					</div>	
+					<div>
+						<p>
+							<stamp facs="#c109_stamp3">
+								E.Sbo<damage agent="ink"><supplied reason="illegible">[rgi] </supplied></damage> Firenze. - Riproduzione interdetta.
+							</stamp>
+						</p>
+						<p>
+							<stamp facs="#c109_stamp4">
+								<unclear reason="faded"> Sborgi </unclear>
+							</stamp>
+						</p>
+					</div>														
+				</div>
+			</body>
+		</text>
+	</TEI>                    	                                
+</teiCorpus>
